@@ -33,7 +33,6 @@
             font-weight: 400;
         }
 
-        /* Navegación */
         nav {
             background-color: var(--white);
             border-bottom: 1px solid var(--gray-100);
@@ -105,7 +104,6 @@
             color: var(--navy);
         }
 
-        /* Hero */
         .hero {
             margin-top: 76px;
             background-color: var(--navy);
@@ -137,7 +135,7 @@
         }
 
         .hero-description {
-            font-size: 1.15rem;
+            font-size: 1.2rem;
             margin-bottom: 3rem;
             line-height: 1.8;
             color: #cbd5e1;
@@ -189,7 +187,6 @@
             border-color: var(--white);
         }
 
-        /* Secciones */
         section {
             padding: 5rem 2rem;
             max-width: 1100px;
@@ -233,7 +230,6 @@
             color: var(--gray-600);
         }
 
-        /* Quiénes Somos */
         .about-section {
             background-color: var(--white);
         }
@@ -253,28 +249,13 @@
             margin-bottom: 1.5rem;
         }
 
-        .team-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
+        .team-description {
             margin-top: 2rem;
-            list-style: none;
-        }
-
-        .team-member {
-            padding: 1.2rem;
+            padding: 1.5rem;
             background-color: var(--gray-50);
             border-left: 3px solid var(--navy);
-            font-weight: 600;
+            font-weight: 500;
             color: var(--navy);
-            font-size: 1rem;
-            transition: all 0.2s;
-        }
-
-        .team-member:hover {
-            background-color: var(--navy);
-            color: var(--white);
-            border-left-color: var(--blue);
         }
 
         .about-image {
@@ -297,7 +278,6 @@
             margin: 0;
         }
 
-        /* Servicios */
         .services {
             background-color: var(--gray-50);
             border-top: 1px solid var(--gray-100);
@@ -306,7 +286,7 @@
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
@@ -343,152 +323,120 @@
             margin: 0;
         }
 
-        /* Talleres */
-        .workshops-list {
+        /* Talleres Section - Azul */
+        .talleres-section {
+            background-color: var(--navy);
+            color: var(--white);
+            padding: 5rem 2rem;
+        }
+
+        .talleres-section h2 {
+            color: var(--white);
+        }
+
+        .talleres-section h2::after {
+            background-color: var(--blue);
+        }
+
+        .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
         }
 
-        .workshop-item {
-            background: var(--white);
-            padding: 2.5rem;
-            border: 1px solid var(--gray-100);
-            border-top: 3px solid var(--navy);
-        }
-
-        .workshop-item:hover {
-            border-top-color: var(--blue);
-        }
-
-        .workshop-item h4 {
-            color: var(--navy);
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
+        .gallery-item {
+            background-color: rgba(255,255,255,0.1);
+            aspect-ratio: 4/3;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
-            font-weight: 600;
+            justify-content: center;
+            border: 1px solid rgba(255,255,255,0.2);
+            color: var(--blue-light);
+            font-size: 3rem;
         }
 
-        .workshop-item ul {
-            margin-left: 0;
-            list-style: none;
-        }
-
-        .workshop-item li {
-            margin-bottom: 0.8rem;
-            padding-left: 1.5rem;
-            position: relative;
-            font-size: 1rem;
-            line-height: 1.6;
-            color: var(--gray-600);
-        }
-
-        .workshop-item li::before {
-            content: "—";
-            position: absolute;
-            left: 0;
-            color: var(--blue);
-            font-weight: bold;
-        }
-
-        .important-notice {
-            background-color: var(--navy);
-            color: var(--white);
+        .talleres-form {
+            max-width: 600px;
+            margin: 3rem auto 0;
+            background-color: rgba(255,255,255,0.05);
             padding: 2rem;
-            margin: 3rem 0;
-            font-size: 1.1rem;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .talleres-form h3 {
+            color: var(--white);
             text-align: center;
-            font-weight: 500;
+            margin-bottom: 1.5rem;
         }
 
-        /* Asesoramiento */
-        .advisory {
-            background-color: var(--gray-50);
-            border-top: 1px solid var(--gray-100);
-        }
-
-        .advisory-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 5rem;
-            align-items: start;
-        }
-
-        .advisory-features {
-            list-style: none;
-            margin-top: 2rem;
-        }
-
-        .advisory-features li {
-            padding: 1.5rem;
+        .talleres-form .form-group {
             margin-bottom: 1rem;
-            background: var(--white);
-            border: 1px solid var(--gray-100);
-            font-size: 1rem;
-            line-height: 1.6;
-            transition: all 0.2s;
         }
 
-        .advisory-features li:hover {
-            border-left: 3px solid var(--blue);
-            padding-left: calc(1.5rem - 3px);
+        .talleres-form label {
+            color: var(--white);
+            font-size: 0.9rem;
         }
 
-        .advisory-features strong {
-            color: var(--navy);
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-            font-size: 1.1rem;
+        .talleres-form input {
+            background-color: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: var(--white);
         }
 
-        .advisory-box {
-            background: var(--white);
-            padding: 3rem;
-            border: 2px solid var(--navy);
+        .talleres-form input::placeholder {
+            color: rgba(255,255,255,0.5);
         }
 
-        .advisory-box h3 {
-            margin-top: 0;
+        .talleres-form .btn-submit {
+            background-color: var(--blue);
+            margin-top: 1rem;
+        }
+
+        /* Ayuda Section */
+        .ayuda-section {
+            background-color: var(--gray-50);
             text-align: center;
-            margin-bottom: 2rem;
-            font-size: 1.5rem;
         }
 
-        .advisory-box ul {
-            list-style: none;
-            font-size: 1.1rem;
+        .ayuda-content {
+            max-width: 700px;
+            margin: 0 auto;
         }
 
-        .advisory-box li {
-            padding: 1rem 0;
-            border-bottom: 1px solid var(--gray-100);
-            color: var(--gray-600);
-        }
-
-        .advisory-box li:last-child {
-            border-bottom: none;
-        }
-
-        .urgent-box {
+        .ayuda-box {
             background-color: var(--navy);
             color: var(--white);
-            padding: 2rem;
+            padding: 3rem;
             margin-top: 2rem;
-            text-align: center;
         }
 
-        .urgent-box strong {
+        .ayuda-box h3 {
             color: var(--white);
-            display: block;
-            margin-bottom: 0.5rem;
-            font-size: 1.2rem;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
         }
 
-        /* Formularios */
+        .ayuda-box p {
+            color: #cbd5e1;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .ayuda-box .phone {
+            color: var(--blue-light);
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 1.5rem 0;
+            display: block;
+        }
+
+        /* Sumate Section */
+        .sumate-section {
+            background-color: var(--white);
+        }
+
         .forms-section {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -496,7 +444,7 @@
         }
 
         .form-container {
-            background: var(--white);
+            background: var(--gray-50);
             padding: 3rem;
             border: 1px solid var(--gray-100);
             border-top: 3px solid var(--navy);
@@ -532,7 +480,7 @@
             border-radius: 0;
             font-size: 1rem;
             font-family: inherit;
-            background-color: var(--gray-50);
+            background-color: var(--white);
             color: var(--black);
             transition: all 0.2s;
         }
@@ -540,7 +488,6 @@
         input:focus, textarea:focus, select:focus {
             outline: none;
             border-color: var(--blue);
-            background-color: var(--white);
         }
 
         textarea {
@@ -567,99 +514,47 @@
             background-color: var(--blue);
         }
 
-        /* Contacto */
-        .contact {
+        /* Emergencias */
+        .emergencias {
             background-color: var(--navy);
             color: var(--white);
             text-align: center;
+            padding: 4rem 2rem;
         }
 
-        .contact h2 {
+        .emergencias h2 {
             color: var(--white);
+            margin-bottom: 1.5rem;
         }
 
-        .contact h2::after {
+        .emergencias h2::after {
             background-color: var(--blue);
         }
 
-        .contact > p {
-            color: #94a3b8;
-            font-size: 1.2rem;
-            margin-bottom: 3rem;
-        }
-
-        .contact-methods {
-            display: flex;
-            justify-content: center;
-            gap: 5rem;
-            margin-top: 3rem;
-            flex-wrap: wrap;
-        }
-
-        .contact-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .contact-icon {
-            font-size: 2rem;
-            background-color: transparent;
-            width: 80px;
-            height: 80px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid rgba(255,255,255,0.2);
-            margin-bottom: 1rem;
-            transition: all 0.2s;
-        }
-
-        .contact-item:hover .contact-icon {
-            background-color: var(--blue);
-            border-color: var(--blue);
-        }
-
-        .contact-item h3 {
-            color: var(--white);
-            font-size: 1.2rem;
-            margin: 0;
-            font-weight: 600;
-        }
-
-        .contact-item p {
-            font-size: 1.2rem;
-            color: var(--white);
-            font-weight: 300;
-            margin: 0;
-        }
-
-        .contact-item small {
-            color: var(--blue-light);
-            font-size: 0.9rem;
-        }
-
-        .emergency-box {
-            margin-top: 4rem;
-            padding: 2.5rem;
-            background-color: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.1);
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .emergency-box h3 {
-            color: var(--white);
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-
-        .emergency-box p {
+        .emergencias p {
             color: #cbd5e1;
-            font-size: 1.1rem;
-            margin: 0;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 1.2rem 3rem;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+            transform: translateY(-2px);
         }
 
         /* Footer */
@@ -686,7 +581,6 @@
             color: #475569;
         }
 
-        /* Utilidades */
         .highlight {
             color: var(--navy);
             font-weight: 700;
@@ -694,7 +588,6 @@
             padding: 0.2rem 0.4rem;
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
@@ -709,7 +602,6 @@
             }
             
             .about-grid,
-            .advisory-content,
             .forms-section {
                 grid-template-columns: 1fr;
                 gap: 3rem;
@@ -717,15 +609,6 @@
             
             h2 {
                 font-size: 2rem;
-            }
-            
-            .contact-methods {
-                flex-direction: column;
-                gap: 3rem;
-            }
-
-            .form-container {
-                padding: 2rem;
             }
         }
     </style>
@@ -743,24 +626,24 @@
                 <li><a href="#quienes-somos">Quiénes Somos</a></li>
                 <li><a href="#que-hacemos">Qué Hacemos</a></li>
                 <li><a href="#talleres">Talleres</a></li>
-                <li><a href="#asesoramiento">Asesoramiento</a></li>
-                <li><a href="#formularios">Formularios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#ayuda">¿Necesitás ayuda?</a></li>
+                <li><a href="#sumate">¡Sumate!</a></li>
+                <li><a href="#emergencias">Emergencias</a></li>
             </ul>
             <button class="mobile-menu">☰</button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <header class="hero">
         <div class="hero-content">
             <h1>+CONECTADXS</h1>
             <p class="hero-subtitle">Uso Seguro de las Finanzas Digitales</p>
             <p class="hero-description">
-                Espacio interdisciplinario de formación, asesoramiento y acompañamiento orientado a promover la prevención de estafas virtuales y el acceso efectivo a la información y derechos digitales y bancarios para adultos mayores en San Rafael, Mendoza.
+                Espacio interdisciplinario orientado a promover la prevención de estafas virtuales y el acceso efectivo a los derechos digitales y bancarios para adultos mayores en San Rafael, Mendoza.
             </p>
             <div class="cta-buttons">
-                <a href="#formularios" class="btn btn-primary">Solicitar Ayuda</a>
+                <a href="#ayuda" class="btn btn-primary">¿Necesitás ayuda?</a>
                 <a href="#talleres" class="btn btn-secondary">Ver Talleres</a>
             </div>
         </div>
@@ -772,25 +655,19 @@
         <div class="about-grid">
             <div class="about-text">
                 <p>
-                    Somos un equipo interdisciplinario de la <span class="highlight">Carrera de Abogacía de la Universidad de Congreso - Sede San Rafael</span>, participantes del <strong>Desafío Pro Bono 2025</strong> de la Red Federal Pro Bono.
+                    Contamos con el apoyo de <span class="highlight">aliados estratégicos</span> con el fin de formar una red de trabajo comunitario. 
                 </p>
                 <p>
-                    Nuestro equipo está conformado por profesionales comprometidos con la inclusión digital y el acceso a la justicia:
+                    Estos aliados cuentan con las características de ser referentes de la comunidad y buscar el bien común de esta.
                 </p>
-                <ul class="team-grid">
-                    <li class="team-member">Sofía Antonella Guardia</li>
-                    <li class="team-member">María Victoria Segovia Sat</li>
-                    <li class="team-member">Rocío Belén Molina</li>
-                    <li class="team-member">Francisco Caro</li>
-                </ul>
-                <p style="margin-top: 2rem;">
-                    Contamos con el apoyo estratégico de aliados clave como la <strong>Asociación de Jubilados y Pensionados de San Rafael</strong>, el <strong>C.I.C "Semillas del Cambio"</strong>, la <strong>Municipalidad de San Rafael</strong> y la <strong>Dirección de Defensa del Consumidor</strong>.
-                </p>
+                <div class="team-description">
+                    Nuestro equipo está conformado por estudiantes universitarios y profesionales de distintas disciplinas.
+                </div>
             </div>
             <div class="about-image">
                 <h3>Nuestra Misión</h3>
                 <p>
-                    Empoderar a la comunidad de adultos mayores de San Rafael (39.265 personas, 18,3% de la población) para que puedan usar tecnologías digitales de forma segura y defiendan efectivamente sus derechos como consumidores y usuarios financieros.
+                    Generar herramientas a la comunidad de adultos mayores para promover la prevención de estafas virtuales y el acceso efectivo a sus derechos digitales y bancarios.
                 </p>
             </div>
         </div>
@@ -799,319 +676,148 @@
     <!-- Qué Hacemos -->
     <section id="que-hacemos" class="services">
         <h2>¿Qué Hacemos?</h2>
-        <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem auto;">
-            Brindamos una respuesta integral que combina <strong>formación práctica</strong>, <strong>orientación jurídica gratuita</strong> y <strong>acompañamiento personalizado</strong> continuo.
-        </p>
         
         <div class="services-grid">
             <div class="service-card">
                 <div class="service-icon">🎓</div>
                 <h3>Formación Digital</h3>
-                <p>Talleres presenciales teórico-prácticos sobre uso de aplicaciones bancarias, prevención de estafas y derechos del consumidor, adaptados especialmente para adultos mayores.</p>
+                <p>Talleres teórico-prácticos sobre prevención de estafas virtuales, uso de aplicaciones bancarias, derechos del consumidor y derechos bancarios, adaptados especialmente para adultos mayores.</p>
             </div>
             
             <div class="service-card">
                 <div class="service-icon">⚖️</div>
                 <h3>Asesoramiento Jurídico</h3>
-                <p>Orientación legal gratuita y personalizada para casos de fraudes, conflictos con entidades financieras, incumplimientos contractuales y vulneración de derechos digitales.</p>
+                <p>Orientación legal gratuita y personalizada.</p>
             </div>
             
             <div class="service-card">
                 <div class="service-icon">📞</div>
                 <h3>Línea de Acompañamiento</h3>
-                <p>Canal permanente de comunicación vía WhatsApp y teléfono para evacuar dudas urgentes, recibir consultas y realizar seguimiento de casos complejos.</p>
-            </div>
-            
-            <div class="service-card">
-                <div class="service-icon">🛡️</div>
-                <h3>Prevención de Estafas</h3>
-                <p>Kit de herramientas legales y materiales didácticos para identificar modalidades de fraudes virtuales y proteger datos personales y patrimoniales.</p>
+                <p>Canal de comunicación permanente de WhatsApp para evacuar dudas y realizar el acompañamiento de los casos llegados a nuestros conocimientos.</p>
             </div>
         </div>
     </section>
 
-    <!-- Talleres -->
-    <section id="talleres">
-        <h2>¿De qué se tratan los talleres?</h2>
-        <p style="text-align: center; max-width: 700px; margin: 0 auto 2rem auto;">
-            Nuestros talleres son <strong>gratuitos, presenciales y accesibles</strong>, diseñados con un enfoque práctico y participativo. Al finalizar, entregamos un cuadernillo con la información y un kit de herramientas legales.
-        </p>
-
-        <div class="important-notice">
-            Los talleres se realizan en diferentes puntos del departamento de San Rafael junto a nuestros aliados locales, facilitando el acceso a todas las zonas del territorio.
+    <!-- Nuestros Talleres -->
+    <section id="talleres" class="talleres-section">
+        <h2>Nuestros Talleres</h2>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item">📷</div>
+            <div class="gallery-item">📷</div>
+            <div class="gallery-item">📷</div>
+            <div class="gallery-item">📷</div>
         </div>
 
-        <div class="workshops-list">
-            <div class="workshop-item">
-                <h4>📱 Uso Seguro de Apps Bancarias</h4>
-                <ul>
-                    <li>Cómo descargar y configurar aplicaciones bancarias de forma segura</li>
-                    <li>Transferencias y pagos digitales paso a paso</li>
-                    <li>Reconocimiento de notificaciones verdaderas vs. fraudulentas</li>
-                    <li>Protección de claves y datos de acceso</li>
-                </ul>
-            </div>
-
-            <div class="workshop-item">
-                <h4>🔍 Modalidades de Estafas Virtuales</h4>
-                <ul>
-                    <li>Identificación de phishing, vishing y smishing</li>
-                    <li>Estafas por WhatsApp, SMS y llamadas telefónicas</li>
-                    <li>Falsas ofertas y sorteos en redes sociales</li>
-                    <li>Suplantación de identidad de familiares o entidades bancarias</li>
-                </ul>
-            </div>
-
-            <div class="workshop-item">
-                <h4>⚖️ Derechos del Consumidor</h4>
-                <ul>
-                    <li>Derechos ante contratos abusivos de servicios digitales</li>
-                    <li>Cómo ejercer la baja efectiva de servicios</li>
-                    <li>Procedimientos de reclamo ante bancos y entidades financieras</li>
-                    <li>Protección de datos personales y privacidad digital</li>
-                </ul>
-            </div>
-
-            <div class="workshop-item">
-                <h4>🌐 Trámites Digitales Seguros</h4>
-                <ul>
-                    <li>Uso seguro de la Billetera Digital (Mercado Pago, Modo, etc.)</li>
-                    <li>Acceso a servicios públicos en línea (ANSES, PAMI, etc.)</li>
-                    <li>Compras seguras por internet</li>
-                    <li>Verificación de sitios web oficiales vs. fraudulentos</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Asesoramiento -->
-    <section id="asesoramiento" class="advisory">
-        <h2>Nuestro Asesoramiento</h2>
-        <div class="advisory-content">
-            <div>
-                <p>
-                    Brindamos <strong>asesoramiento jurídico gratuito y personalizado</strong> para personas afectadas por estafas virtuales, conflictos con servicios bancarios o situaciones de vulnerabilidad digital.
-                </p>
-                <h3 style="margin-top: 2rem;">¿Cómo funciona?</h3>
-                <ul class="advisory-features">
-                    <li>
-                        <strong>Atención inicial</strong>
-                        Recibimos tu consulta por WhatsApp, teléfono o durante los talleres.
-                    </li>
-                    <li>
-                        <strong>Evaluación</strong>
-                        Analizamos tu caso según el Protocolo de Atención Jurídica diseñado por nuestro equipo.
-                    </li>
-                    <li>
-                        <strong>Orientación</strong>
-                        Te informamos sobre tus derechos y las opciones legales disponibles.
-                    </li>
-                    <li>
-                        <strong>Derivación</strong>
-                        Si el caso lo requiere, te vinculamos con aliados especializados (Red Federal Pro Bono, Defensa del Consumidor).
-                    </li>
-                    <li>
-                        <strong>Seguimiento</strong>
-                        Acompañamos tu caso hasta su resolución, realizando un seguimiento constante.
-                    </li>
-                </ul>
-            </div>
-            <div class="advisory-box">
-                <h3>Derechos que protegemos</h3>
-                <ul>
-                    <li>✓ Acceso a la información clara sobre servicios digitales</li>
-                    <li>✓ Educación y alfabetización digital</li>
-                    <li>✓ Protección de datos personales y privacidad</li>
-                    <li>✓ Defensa del consumidor y usuario financiero</li>
-                    <li>✓ Acceso efectivo a la justicia</li>
-                    <li>✓ Igualdad y no discriminación</li>
-                </ul>
-                <div class="urgent-box">
-                    <strong>¿Fuiste víctima de una estafa?</strong>
-                    <span style="color: #cbd5e1;">No estás solo. Completá el formulario y te contactamos en menos de 24 horas.</span>
+        <div class="talleres-form">
+            <h3>¿Querés asistir a nuestros talleres?</h3>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="celular-taller">Dejanos tu celular y nos contactamos:</label>
+                    <input type="tel" id="celular-taller" name="celular" placeholder="2604XXXXXX" required>
                 </div>
+                <button type="submit" class="btn-submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ¿Necesitás ayuda? -->
+    <section id="ayuda" class="ayuda-section">
+        <h2>¿Necesitás ayuda?</h2>
+        <div class="ayuda-content">
+            <p style="font-size: 1.2rem;">
+                Si sufriste alguna estafa por teléfono contactanos
+            </p>
+            
+            <div class="ayuda-box">
+                <h3>Si sufriste una estafa contactanos</h3>
+                <p>Estamos disponibles para ayudarte</p>
+                <span class="phone">2604-XXXXXX</span>
             </div>
         </div>
     </section>
 
-    <!-- Formularios -->
-    <section id="formularios">
-        <h2>Solicitudes</h2>
-        <p style="text-align: center; margin-bottom: 2rem; color: var(--gray-600);">
-            Completá el formulario correspondiente a tu necesidad. Te contactaremos a la brevedad.
-        </p>
+    <!-- ¡Sumate! -->
+    <section id="sumate" class="sumate-section">
+        <h2>¡Sumate!</h2>
         
         <div class="forms-section">
-            <!-- Formulario Asesoramiento -->
+            <!-- Formulario Aliados -->
             <div class="form-container">
-                <h3>📋 Solicitar Asesoramiento Jurídico</h3>
+                <h3>Aliados</h3>
+                <p style="text-align: center; margin-bottom: 2rem; font-size: 0.95rem;">
+                    Si participás de alguna organización pública o privada y querés colaborar con los adultos mayores en la prevención de estafas
+                </p>
                 <form action="#" method="POST">
                     <div class="form-group">
-                        <label for="nombre-aseso">Nombre y Apellido *</label>
-                        <input type="text" id="nombre-aseso" name="nombre" required placeholder="Ej: Juan Pérez">
+                        <label for="nombre-aliado">Nombre *</label>
+                        <input type="text" id="nombre-aliado" name="nombre" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="telefono-aseso">Teléfono (WhatsApp) *</label>
-                        <input type="tel" id="telefono-aseso" name="telefono" required placeholder="Ej: 2604XXXXXX">
+                        <label for="apellido-aliado">Apellido *</label>
+                        <input type="text" id="apellido-aliado" name="apellido" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="email-aseso">Correo electrónico (opcional)</label>
-                        <input type="email" id="email-aseso" name="email" placeholder="tu@email.com">
+                        <label for="org-aliado">Organización a la que pertenecés *</label>
+                        <input type="text" id="org-aliado" name="organizacion" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="localidad-aseso">Localidad/Distrito *</label>
-                        <select id="localidad-aseso" name="localidad" required>
-                            <option value="">Seleccionar...</option>
-                            <option value="san-rafael">San Rafael (Ciudad)</option>
-                            <option value="cuadro-nacional">Cuadro Nacional</option>
-                            <option value="jaime-prats">Jaime Prats</option>
-                            <option value="las-errazuriz">Las Errázuriz</option>
-                            <option value="monte-coman">Monte Comán</option>
-                            <option value="real-del-padre">Real del Padre</option>
-                            <option value="rama-caida">Rama Caída</option>
-                            <option value="otro">Otro</option>
-                        </select>
+                        <label for="email-aliado">Email de contacto *</label>
+                        <input type="email" id="email-aliado" name="email" required>
                     </div>
                     
-                    <div class="form-group">
-                        <label for="tipo-caso">Tipo de situación *</label>
-                        <select id="tipo-caso" name="tipo_caso" required>
-                            <option value="">Seleccionar...</option>
-                            <option value="estafa">Fui víctima de una estafa virtual</option>
-                            <option value="banco">Problema con entidad bancaria</option>
-                            <option value="contrato">Contrato abusivo de servicio digital</option>
-                            <option value="datos">Vulneración de datos personales</option>
-                            <option value="app">No puedo usar aplicaciones bancarias</option>
-                            <option value="otro">Otra consulta legal</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="descripcion-aseso">Descripción de la situación *</label>
-                        <textarea id="descripcion-aseso" name="descripcion" required placeholder="Contanos qué pasó, cuándo ocurrió y qué ayuda necesitás..."></textarea>
-                    </div>
-                    
-                    <div class="form-group" style="margin-bottom: 0;">
-                        <label style="font-weight: 400; text-transform: none; font-size: 0.9rem; display: flex; align-items: start; gap: 0.5rem; cursor: pointer; color: var(--gray-600);">
-                            <input type="checkbox" required style="width: auto; margin-top: 0.3rem;"> 
-                            <span>Acepto que mis datos sean utilizados para el seguimiento del caso. <em style="color: var(--navy);">Confidencialidad garantizada.</em></span>
-                        </label>
-                    </div>
-                    
-                    <button type="submit" class="btn-submit">Enviar Solicitud</button>
+                    <button type="submit" class="btn-submit">Enviar</button>
                 </form>
             </div>
 
-            <!-- Formulario Talleres -->
+            <!-- Formulario Voluntarios -->
             <div class="form-container">
-                <h3>🎓 Solicitar Taller para mi grupo</h3>
+                <h3>Voluntarios</h3>
+                <p style="text-align: center; margin-bottom: 2rem; font-size: 0.95rem;">
+                    Si querés participar de actividades coordinadas en favor de los adultos mayores
+                </p>
                 <form action="#" method="POST">
                     <div class="form-group">
-                        <label for="nombre-taller">Nombre del solicitante *</label>
-                        <input type="text" id="nombre-taller" name="nombre" required placeholder="Nombre completo">
+                        <label for="nombre-vol">Nombre *</label>
+                        <input type="text" id="nombre-vol" name="nombre" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="organizacion">Organización/Barrio/Grupo *</label>
-                        <input type="text" id="organizacion" name="organizacion" required placeholder="Ej: Centro de Jubilados Los Olivos">
+                        <label for="apellido-vol">Apellido *</label>
+                        <input type="text" id="apellido-vol" name="apellido" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="telefono-taller">Teléfono de contacto *</label>
-                        <input type="tel" id="telefono-taller" name="telefono" required placeholder="2604XXXXXX">
+                        <label for="como-sumas">¿Cómo creés que podrías sumar en +Conectados? *</label>
+                        <textarea id="como-sumas" name="como_sumar" required></textarea>
                     </div>
                     
                     <div class="form-group">
-                        <label for="localidad-taller">Localidad donde se realizaría *</label>
-                        <select id="localidad-taller" name="localidad" required>
-                            <option value="">Seleccionar...</option>
-                            <option value="san-rafael">San Rafael (Ciudad)</option>
-                            <option value="cuadro-nacional">Cuadro Nacional</option>
-                            <option value="jaime-prats">Jaime Prats</option>
-                            <option value="las-errazuriz">Las Errázuriz</option>
-                            <option value="monte-coman">Monte Comán</option>
-                            <option value="real-del-padre">Real del Padre</option>
-                            <option value="rama-caida">Rama Caída</option>
-                            <option value="otro">Otro distrito</option>
-                        </select>
+                        <label for="motivacion">¿Cuál es tu motivación? *</label>
+                        <textarea id="motivacion" name="motivacion" required></textarea>
                     </div>
                     
-                    <div class="form-group">
-                        <label for="cantidad">Cantidad aproximada de participantes *</label>
-                        <select id="cantidad" name="cantidad" required>
-                            <option value="">Seleccionar...</option>
-                            <option value="5-10">De 5 a 10 personas</option>
-                            <option value="10-20">De 10 a 20 personas</option>
-                            <option value="20-30">De 20 a 30 personas</option>
-                            <option value="30+">Más de 30 personas</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="tema-interes">Tema de interés principal *</label>
-                        <select id="tema-interes" name="tema" required>
-                            <option value="">Seleccionar...</option>
-                            <option value="apps">Uso de aplicaciones bancarias</option>
-                            <option value="estafas">Prevención de estafas virtuales</option>
-                            <option value="derechos">Derechos del consumidor</option>
-                            <option value="general">Introducción general a finanzas digitales</option>
-                            <option value="todos">Todos los temas (ciclo completo)</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="fecha-preferencia">Preferencia de día/horario</label>
-                        <input type="text" id="fecha-preferencia" name="preferencia" placeholder="Ej: Mañanas de martes, fines de semana...">
-                    </div>
-                    
-                    <div class="form-group" style="margin-bottom: 0;">
-                        <label for="observaciones">Observaciones adicionales</label>
-                        <textarea id="observaciones" name="observaciones" placeholder="Necesidades especiales, disponibilidad de lugar, etc." style="min-height: 80px;"></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn-submit">Solicitar Taller</button>
+                    <button type="submit" class="btn-submit">Enviar</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Contacto -->
-    <section id="contacto" class="contact">
-        <h2>Contacto</h2>
-        <p>Estamos disponibles para evacuar tus dudas y recibir tu consulta</p>
+    <!-- Emergencias por Estafa -->
+    <section id="emergencias" class="emergencias">
+        <h2>Emergencias por Estafa</h2>
+        <p>Si sufriste una estafa, hacé clic en el botón de abajo para contactarnos inmediatamente por WhatsApp</p>
         
-        <div class="contact-methods">
-            <div class="contact-item">
-                <div class="contact-icon">📱</div>
-                <h3>WhatsApp</h3>
-                <p>+54 9 260 XXXXXXX</p>
-                <small>Lunes a Viernes de 9 a 18 hs</small>
-            </div>
-            
-            <div class="contact-item">
-                <div class="contact-icon">📧</div>
-                <h3>Email</h3>
-                <p>conectadxs@ucu.edu.ar</p>
-                <small>Respuesta en 24-48 hs</small>
-            </div>
-            
-            <div class="contact-item">
-                <div class="contact-icon">📍</div>
-                <h3>Presencial</h3>
-                <p>Universidad de Congreso</p>
-                <small>Sede San Rafael, Mendoza</small>
-            </div>
-        </div>
-
-        <div class="emergency-box">
-            <h3>¿Emergencia por estafa?</h3>
-            <p>
-                Si acabas de ser víctima de una estafa y necesitás ayuda urgente, escribinos por WhatsApp con la palabra <strong style="color: var(--white);">"AYUDA"</strong> y te atenderemos prioritariamente.
-            </p>
-        </div>
+        <a href="https://wa.me/5492604XXXXXX?text=Ayuda%20sufrí%20una%20estafa%20mi%20nombre%20es%20[XXX]%20y%20necesito%20comunicarme%20con%20ustedes" class="whatsapp-btn" target="_blank">
+            Contactar por WhatsApp
+        </a>
+        
+        <p style="margin-top: 2rem; font-size: 1rem; color: #94a3b8;">
+            El mensaje dirá: "Ayuda sufrí una estafa mi nombre es xxx y necesito comunicarme con ustedes"
+        </p>
     </section>
 
     <!-- Footer -->
@@ -1131,7 +837,6 @@
     </footer>
 
     <script>
-        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -1145,7 +850,6 @@
             });
         });
 
-        // Menú mobile
         const mobileMenu = document.querySelector('.mobile-menu');
         const navLinks = document.querySelector('.nav-links');
         
